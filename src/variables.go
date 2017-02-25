@@ -11,4 +11,7 @@ func main(){
 
   var c, python, java = true, false, "no!"
   fmt.Println(j, k, c, python, java)
+
+  k := 3
+  fmt.Println(k)
 }
