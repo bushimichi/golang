@@ -8,8 +8,9 @@ import (
 
 func main() {
   fmt.Print("Go runs on ")
-  
-  switch os := runtime.GOOS; os {
+
+  os := runtime.GOOS;
+  switch os{
     case "darwin":
       fmt.Println("OS X.")
     case "linux":
@@ -30,7 +31,7 @@ func main() {
   }
  
   t1 := time.Now().Hour()
-  switch t1{
+  switch{
     case t1 < 12:
     fmt.Println("おはようございます")
     case t1 < 17:
