@@ -28,6 +28,14 @@ func main() {
     default:
       fmt.Println("good evening")
   }
-  
+ 
+  t1 := time.Now().Hour()
+  switch t1{
+    case t1 < 12:
+    fmt.Println("おはようございます")
+    case t1 < 17:
+    fmt.Println("こんにちは")
+    default:
+    fmt.Println("こんばんは")
+  }
 }
-  
